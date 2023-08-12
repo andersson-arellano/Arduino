@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 import { ZodError } from "zod";
 import { uploadData } from "~/server/db/db";
 import { dataRequestSchema } from "~/server/models/reqData";

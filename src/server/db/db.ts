@@ -1,5 +1,5 @@
 import { firestore } from "../firebaseAdmin";
-import { Data } from "../models/data";
+import type { Data } from "../models/data";
 
 export async function uploadData(data: Data) {
   const dataToUpdate = {

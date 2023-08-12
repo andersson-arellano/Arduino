@@ -2,7 +2,6 @@ import * as admin from 'firebase-admin';
 import { env } from '~/env.mjs';
 if (!admin.apps.length) {
   admin.initializeApp({
-    // @ts-ignore
     credential: admin.credential.cert({
       clientEmail: env.CLIENT_EMAIL,
       privateKey: env.PRIVATE_KEY,

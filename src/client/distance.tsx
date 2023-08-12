@@ -11,7 +11,7 @@ interface AlertInformation {
   message: string
 }
 
-const div = (
+export const div = (
   <>
     <div className='h-0 w-0 bg-blue-500 text-blue-500 border-blue-500'></div>
     <div className='h-0 w-0 bg-blue-900 text-blue-900 border-blue-900'></div>
