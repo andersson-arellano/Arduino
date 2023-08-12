@@ -7,7 +7,7 @@ export async function uploadData(data: Data) {
     timestamp: data.timestamp
   };
   const batch = firestore.batch();
-  batch.set(firestore.collection("data").doc(), dataToUpdate);
+  // batch.set(firestore.collection("data").doc(), dataToUpdate);
   batch.update(firestore.collection("data").doc("currentData"), dataToUpdate);
   
   return await batch.commit();

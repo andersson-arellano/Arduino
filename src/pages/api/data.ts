@@ -13,7 +13,7 @@ export default async function handler(
     if (req.method == "POST") {
       const { distance } = await dataRequestSchema.parseAsync(req.body);
       await uploadData({
-        distance,
+        distance: +((distance / 100).toFixed(2)),
         timestamp: Date.now()
       });
       console.log("Added", distance);
