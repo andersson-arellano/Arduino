@@ -46,14 +46,14 @@ export default function Distance() {
       message: "Please wait."
     };
     const distance = z.number().parse(data.distance);
-    if (distance > 3) return {
+    if (distance > 1.5) return {
       color_500: "teal-500",
       color_900: "teal-900",
       color_100: "teal-100",
       distance: `${distance}m`,
       message: "It's all good, you're clear to move.",
     };
-    if (distance <= 3 && distance > 2) return {
+    if (distance <= 1.3 && distance > 0.3) return {
       color_500: "yellow-500",
       color_900: "yellow-900",
       color_100: "yellow-100",
